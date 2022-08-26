@@ -1,5 +1,5 @@
 # Apple-Newsletter
-
+A mail list adder site using Mailchimp API, it stores user data and sends newsletters.
 You can view the site here
 [Click Me](https://stormy-brushlands-01992.herokuapp.com)
 
