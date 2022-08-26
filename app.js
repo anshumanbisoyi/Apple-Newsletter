@@ -68,7 +68,7 @@ app.post("/failure", function(req,res){ //to route the screen to the desired pag
   res.redirect("/");
 });
 
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || 3000, function(){ //process.env.PORT to let heroku host whereever it wants or locally host at 3000
   console.log("Server working on port 3000");
 });
 
