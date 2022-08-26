@@ -13,9 +13,9 @@ app.use(bodyParser.urlencoded({extended:true}));
 //Setting up MailChimp
 mailchimp.setConfig({
 //API KEY
- apiKey: "91791083d1c98fa315e028a4b5bc45c1-us18",
+ apiKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxx-usXX",
 //API KEY PREFIX (THE SERVER)
-  server: "us18"
+  server: "usXX"
 })
 
 
@@ -39,11 +39,11 @@ app.post("/",function(req,res){
       }]
   };
   const jsonData= JSON.stringify(data);
- const url="https://us18.api.mailchimp.com/3.0/lists/cc23ddbcf3";
+ const url="https://usXX.api.mailchimp.com/3.0/lists/xxxxxxx";
   //const url="https://us18.api.mailchimp.com/3.0/lists/cc23ddbcf3/members?skip_merge_validation=false"
   const options={
     method:"POST",
-    auth:"anshumanbisoyi:91791083d1c98fa315e028a4b5bc45c1-us18"
+    auth:"anshumanbisoyi:xxxxxxxxxxxxxxxxxxxxxxxxxx-usXX"
   }
 
 const request=https.request(url,options, function(response){
@@ -73,9 +73,7 @@ app.listen(process.env.PORT || 3000, function(){ //process.env.PORT to let herok
 });
 
 // api key
-// d665e572a698801cc94fb381ff3f0d3b-us18 client
-//4e25b5c785b1445c2e70a0d8b2b1472c-us18 client
-//91791083d1c98fa315e028a4b5bc45c1-us18 onwer this works
+//use onwer api key not client
 
 //unique id
-//cc23ddbcf3
+//xxxxxxx
